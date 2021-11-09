@@ -59,7 +59,7 @@ const Article= styled.div`
     `;
 
 
-function NewsCards({articles,activeArticles}) {
+function Cards({articles,activeArticles}) {
     const infoCards=[
         { id:'01', title: 'Latest News', text: 'Give me the latest news' },
         { id:'02', title: 'News by Categories', info: 'Business, Entertainment, General, Health, Science, Sports, Technology', text: 'Give me the latest Technology news' },
@@ -93,4 +93,4 @@ function NewsCards({articles,activeArticles}) {
         </div>
     )}
 
-export default NewsCards
+export default Cards

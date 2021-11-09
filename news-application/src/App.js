@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import alanBtn from '@alan-ai/alan-sdk-web';
 import './App.css';
-import NewsCards from './components/NewsCards';
+import Cards from './components/Cards';
 import wordsToNumbers from 'words-to-numbers'
 
 function App() {
@@ -53,7 +53,7 @@ function App() {
                 
             </div>
             </div>):null}
-            <NewsCards articles={newsArticles} activeArticles={activeArticles}/>
+            <Cards articles={newsArticles} activeArticles={activeArticles}/>
         </div>
     )
 }
