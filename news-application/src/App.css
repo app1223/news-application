@@ -1,0 +1,105 @@
+
+ body{
+    background-color: whitesmoke;
+    height: 100vh;
+ }
+ .frontpage{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ }
+ .heading {
+    border-radius: 10px;
+    transition:transform 0.3s ease;
+    background-color: white;
+    padding: 20px;
+    animation: animate 1s linear normal;
+ }
+ .heading:hover{
+    transform:scale(1.1);
+    box-shadow: 0 6px 16px -2px gray;
+    border:2px solid gray;
+    z-index:100;
+  }
+ .newscards{
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border-bottom:20px solid white;
+    border-radius:10px;
+    box-shadow:0 10px 16px -2px lightgray;
+    height:100%;
+    width:30vw;
+  
+}
+.activenewscards{
+    display:flex;
+    flex-direction:column;
+    background-color: white;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0 10px 16px -2px lightgray;
+    height:100%;
+    width:30vw;
+    border-bottom: 20px solid lightskyblue;
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius:10px ;
+}
+.app_container{
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  margin: auto;
+}
+.app_article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    box-shadow: 10px 10px 5px white;
+
+}
+.app_article >p{
+  font-size: 1.2rem;
+}
+.app_article>strong{
+  font-size: 1.3rem;
+}
+ @media only screen and (max-width: 600px) {
+    .card{
+      flex-direction: column;
+
+    }
+    .frontpage{
+        flex-direction: column;
+    }
+    .newscards{
+        width:100%;
+    }   
+    .activenewscards{
+      width:100%;
+  }   
+  }
+  @keyframes animate {
+    0%{
+      transform: translateY(-100px);
+    }
+    50%{
+      transform: translateY(-30px);
+    }
+    90%,100%{
+      transform:translateY(0)
+    }
+  }
