@@ -9,7 +9,6 @@ function App() {
     const [activeArticles, setActiveArticles] = useState(-1);
     const apiKey = `${process.env.REACT_APP_API}`;
     useEffect(() => {
-        console.log(`${process.env.REACT_APP_API}`)
         alanBtn({
             key:apiKey,
             onCommand:({command , articles,number})=>{
