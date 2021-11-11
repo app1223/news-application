@@ -7,9 +7,9 @@ import wordsToNumbers from 'words-to-numbers'
 function App() {
     const [newsArticles, setNewsArticles] = useState([]);
     const [activeArticles, setActiveArticles] = useState(-1);
-    const apiKey ="db7742f3d0e5c49960b0b102368e2dcf2e956eca572e1d8b807a3e2338fdd0dc/stage";
+    const apiKey = `${process.env.REACT_APP_API}`;
     useEffect(() => {
-        
+        console.log(`${process.env.REACT_APP_API}`)
         alanBtn({
             key:apiKey,
             onCommand:({command , articles,number})=>{
